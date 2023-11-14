@@ -76,8 +76,12 @@ class Predefine {
   /**
    * the current opened file's dirname relative to `$fileWorkspaceFolder`
    */
-  public relativeFileDirname(): string {
-    return path.relative(this.fileWorkspaceFolder(), this.fileDirname());
+  public relativeFileDirname(headToDel: string = ""): string {
+    let result = path.relative(this.fileWorkspaceFolder(), this.fileDirname());
+    if(headToDel.trim() != "" && result.startsWith(headToDel)){
+      result = result.substring(headToDel.length);
+    }
+    return result;
   }
 
   /**
