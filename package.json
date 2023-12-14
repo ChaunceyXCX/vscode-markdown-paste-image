@@ -1,21 +1,21 @@
 {
-  "name": "vscode-markdown-paste-image",
-  "displayName": "Markdown Paste",
+  "name": "vscode-markdown-paste-image-for-vuepress",
+  "displayName": "Markdown Paste For Vuepress",
   "description": "A smartly paste for markdown.",
   "version": "1.0.2",
-  "publisher": "telesoho",
+  "publisher": "chaunceyxie",
   "author": {
-    "name": "telesoho",
-    "email": "telesoho@gmail.com"
+    "name": "chaunceyxie",
+    "email": "chaunceyxcx@gmail.com"
   },
   "license": "(MIT)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/telesoho/vscode-markdown-paste-image.git"
+    "url": "https://github.com/ChaunceyXCX/vscode-markdown-paste-image.git"
   },
-  "homepage": "https://github.com/telesoho/vscode-markdown-paste-image",
+  "homepage": "https://github.com/ChaunceyXCX/vscode-markdown-paste-image",
   "bugs": {
-    "url": "https://github.com/telesoho/vscode-markdown-paste-image/issues"
+    "url": "https://github.com/ChaunceyXCX/vscode-markdown-paste-image/issues"
   },
   "icon": "res/images/icon.png",
   "galleryBanner": {
@@ -202,35 +202,35 @@
     },
     "commands": [
       {
-        "command": "telesoho.MarkdownDownload",
+        "command": "ChaunceyXCX.MarkdownDownload",
         "title": "Markdown Download"
       },
       {
-        "command": "telesoho.MarkdownPaste",
+        "command": "ChaunceyXCX.MarkdownPaste",
         "title": "Markdown Paste"
       },
       {
-        "command": "telesoho.MarkdownRuby",
+        "command": "ChaunceyXCX.MarkdownRuby",
         "title": "Markdown Ruby"
       },
       {
-        "command": "telesoho.insertMathSymbol",
+        "command": "ChaunceyXCX.insertMathSymbol",
         "title": "Insert latex math symbol"
       },
       {
-        "command": "telesoho.MarkdownPasteCode",
+        "command": "ChaunceyXCX.MarkdownPasteCode",
         "title": "Markdown Paste Code"
       }
     ],
     "menus": {
       "editor/context": [
         {
-          "command": "telesoho.MarkdownPaste",
+          "command": "ChaunceyXCX.MarkdownPaste",
           "when": "editorLangId == markdown",
           "group": "markdown"
         },
         {
-          "command": "telesoho.MarkdownPasteCode",
+          "command": "ChaunceyXCX.MarkdownPasteCode",
           "when": "editorLangId == markdown",
           "group": "markdown"
         }
@@ -238,25 +238,25 @@
     },
     "keybindings": [
       {
-        "command": "telesoho.MarkdownDownload",
+        "command": "ChaunceyXCX.MarkdownDownload",
         "key": "ctrl+alt+d",
         "mac": "cmd+alt+d",
         "when": "editorTextFocus"
       },
       {
-        "command": "telesoho.MarkdownPaste",
+        "command": "ChaunceyXCX.MarkdownPaste",
         "key": "ctrl+alt+v",
         "mac": "cmd+alt+v",
         "when": "editorTextFocus && resourceLangId == markdown"
       },
       {
-        "command": "telesoho.MarkdownPasteCode",
+        "command": "ChaunceyXCX.MarkdownPasteCode",
         "key": "ctrl+alt+c",
         "mac": "cmd+alt+c",
         "when": "editorTextFocus && resourceLangId == markdown"
       },
       {
-        "command": "telesoho.MarkdownRuby",
+        "command": "ChaunceyXCX.MarkdownRuby",
         "key": "ctrl+alt+t",
         "mac": "cmd+alt+t",
         "when": "editorTextFocus"
@@ -264,7 +264,7 @@
       {
         "key": "ctrl+alt+\\",
         "mac": "cmd+alt+\\",
-        "command": "telesoho.insertMathSymbol",
+        "command": "ChaunceyXCX.insertMathSymbol",
         "when": "editorTextFocus"
       }
     ],

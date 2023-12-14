@@ -78,7 +78,7 @@ class Predefine {
    */
   public relativeFileDirname(headToDel: string = ""): string {
     let result = path.relative(this.fileWorkspaceFolder(), this.fileDirname());
-    if(headToDel.trim() != "" && result.startsWith(headToDel)){
+    if (headToDel.trim() != "" && result.startsWith(headToDel)) {
       result = result.substring(headToDel.length);
     }
     return result;
