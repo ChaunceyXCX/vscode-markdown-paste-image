@@ -46,7 +46,7 @@ export function activate(context: vscode.ExtensionContext) {
   Logger.log('"vscode-markdown-paste" is now active!');
   let LatexMathSymbol = new LatexSymbol();
   LatexMathSymbol.load(latexSymbols);
-  vscode.commands.registerCommand("telesoho.insertMathSymbol", () => {
+  vscode.commands.registerCommand("chaunceyxie.insertMathSymbol", () => {
     vscode.window
       .showQuickPick(LatexMathSymbol.getItems(), {
         ignoreFocusOut: true,
@@ -54,22 +54,22 @@ export function activate(context: vscode.ExtensionContext) {
       .then(LatexMathSymbol.insertToEditor);
   });
   context.subscriptions.push(
-    vscode.commands.registerCommand("telesoho.MarkdownDownload", () => {
+    vscode.commands.registerCommand("chaunceyxie.MarkdownDownload", () => {
       Paster.pasteDownload();
     })
   );
   context.subscriptions.push(
-    vscode.commands.registerCommand("telesoho.MarkdownPaste", () => {
+    vscode.commands.registerCommand("chaunceyxie.MarkdownPaste", () => {
       Paster.pasteText();
     })
   );
   context.subscriptions.push(
-    vscode.commands.registerCommand("telesoho.MarkdownRuby", () => {
+    vscode.commands.registerCommand("chaunceyxie.MarkdownRuby", () => {
       Paster.Ruby();
     })
   );
   context.subscriptions.push(
-    vscode.commands.registerCommand("telesoho.MarkdownPasteCode", () => {
+    vscode.commands.registerCommand("chaunceyxie.MarkdownPasteCode", () => {
       Paster.pasteCode();
     })
   );

@@ -48,7 +48,7 @@
     "lint": "eslint src --ext ts",
     "test": "node ./test/runTest.ts",
     "dev:preinstall": "npx vsce package",
-    "dev:install": "code --install-extension ./vscode-markdown-paste-image-*.vsix"
+    "dev:install": "code --install-extension ./vscode-markdown-paste-image-for-vuepress-1.0.3.vsix"
   },
   "contributes": {
     "configuration": {
@@ -202,7 +202,7 @@
     },
     "commands": [
       {
-        "command": "chaunceyXCX.MarkdownDownload",
+        "command": "chaunceyxie.MarkdownDownload",
         "title": "Markdown Download"
       },
       {
