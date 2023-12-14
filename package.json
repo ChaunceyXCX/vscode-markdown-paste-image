@@ -202,35 +202,35 @@
     },
     "commands": [
       {
-        "command": "ChaunceyXCX.MarkdownDownload",
+        "command": "chaunceyXCX.MarkdownDownload",
         "title": "Markdown Download"
       },
       {
-        "command": "ChaunceyXCX.MarkdownPaste",
+        "command": "chaunceyxie.MarkdownPaste",
         "title": "Markdown Paste"
       },
       {
-        "command": "ChaunceyXCX.MarkdownRuby",
+        "command": "chaunceyxie.MarkdownRuby",
         "title": "Markdown Ruby"
       },
       {
-        "command": "ChaunceyXCX.insertMathSymbol",
+        "command": "chaunceyxie.insertMathSymbol",
         "title": "Insert latex math symbol"
       },
       {
-        "command": "ChaunceyXCX.MarkdownPasteCode",
+        "command": "chaunceyxie.MarkdownPasteCode",
         "title": "Markdown Paste Code"
       }
     ],
     "menus": {
       "editor/context": [
         {
-          "command": "ChaunceyXCX.MarkdownPaste",
+          "command": "chaunceyxie.MarkdownPaste",
           "when": "editorLangId == markdown",
           "group": "markdown"
         },
         {
-          "command": "ChaunceyXCX.MarkdownPasteCode",
+          "command": "chaunceyxie.MarkdownPasteCode",
           "when": "editorLangId == markdown",
           "group": "markdown"
         }
@@ -238,25 +238,25 @@
     },
     "keybindings": [
       {
-        "command": "ChaunceyXCX.MarkdownDownload",
+        "command": "chaunceyxie.MarkdownDownload",
         "key": "ctrl+alt+d",
         "mac": "cmd+alt+d",
         "when": "editorTextFocus"
       },
       {
-        "command": "ChaunceyXCX.MarkdownPaste",
+        "command": "chaunceyxie.MarkdownPaste",
         "key": "ctrl+alt+v",
         "mac": "cmd+alt+v",
         "when": "editorTextFocus && resourceLangId == markdown"
       },
       {
-        "command": "ChaunceyXCX.MarkdownPasteCode",
+        "command": "chaunceyxie.MarkdownPasteCode",
         "key": "ctrl+alt+c",
         "mac": "cmd+alt+c",
         "when": "editorTextFocus && resourceLangId == markdown"
       },
       {
-        "command": "ChaunceyXCX.MarkdownRuby",
+        "command": "chaunceyxie.MarkdownRuby",
         "key": "ctrl+alt+t",
         "mac": "cmd+alt+t",
         "when": "editorTextFocus"
@@ -264,7 +264,7 @@
       {
         "key": "ctrl+alt+\\",
         "mac": "cmd+alt+\\",
-        "command": "ChaunceyXCX.insertMathSymbol",
+        "command": "chaunceyxie.insertMathSymbol",
         "when": "editorTextFocus"
       }
     ],
