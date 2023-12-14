@@ -58,7 +58,7 @@
         "MarkdownPaste.path": {
           "type": "string",
           "scope": "resource",
-          "default": "${fileDirname}",
+          "default": "${workspaceRoot}/src/.vuepress/public/assets/images/${relativeFileDirname|src}",
           "description": "The destination to save image file."
         },
         "MarkdownPaste.nameBase": {
