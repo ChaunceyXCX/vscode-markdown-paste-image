@@ -1,5 +1,12 @@
 # Change Log
 
+## 1.0.3 (December 19, 2023)
+
+- feat: 在原代码`${relativeFileDirname}` 的基础上添加了删除指定头部路径字符串的选项 => `${relativeFileDirname|headToDel}`
+  - 例如: 将当前`.md` 文件获取到的路径 `src/计算机基础/网络/xxx` 我需要保存到 `src/.vuepress/public/assets/images/计算机基础/网络/` 
+  - 只需要修改`MarkdownPaste.path:${workspaceRoot}/src/.vuepress/public/assets/images/${relativeFileDirname|src}`
+  - 这样就会把`relativeFileDirname` 取到的路径头部删除指定字符串`src` 保存到我们需要的路径
+
 ## 1.0.2 (November 5, 2023)
 
 - feat: New vscode option for html to markdown

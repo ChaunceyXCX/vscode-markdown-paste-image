@@ -14,6 +14,12 @@ Smartly paste for Markdown.
 
 ## Features
 
+- Custom added
+  在原代码的基础上添加了删除指定头部路径字符串的选项
+  - 例如: 将当前`.md` 文件获取到的路径 `src/计算机基础/网络/xxx` 我需要保存到 `src/.vuepress/public/assets/images/计算机基础/网络/` 
+  - 只需要修改`MarkdownPaste.path:${workspaceRoot}/src/.vuepress/public/assets/images/${relativeFileDirname|src}`
+  - 这样就会把`relativeFileDirname` 取到的路径头部删除指定字符串`src` 保存到我们需要的路径
+
 - Paste smart
 
   Smartly paste in Markdown by pressing 'Ctrl+Alt+V' ('Cmd+Alt+V' on Mac) or `Markdown Paste` command.
@@ -65,7 +71,7 @@ Smartly paste for Markdown.
   - `${workspaceFolderBasename}` - the name of the folder opened in VS Code without any slashes (/)
   - `${fileWorkspaceFolder}` - the current opened file's workspace folder
   - `${file}` or `${filePath}` - the current opened file
-  - `${relativeFileDirname}` - the current opened file's dirname relative to `$fileWorkspaceFolder`
+  - `${relativeFileDirname|headToDel}` - the current opened file's dirname relative to `$fileWorkspaceFolder`,在原代码的基础上添加了删除指定头部路径字符串的选项
   - `${fileBasename}` - the current opened file's base name
   - `${fileBasenameNoExtension}` - the current opened file's base name with no file extension
   - `${fileExtname}` - the current opened file's extension
